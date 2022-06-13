@@ -4,7 +4,86 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Photo Editing</title>
+    <!-- Tailwind CSS -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- For customization -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              myFont: "#2B1B9A",
+              mybgColor: "#67B6F4",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="flex justify-start space-x-4">
+        <a href=""><img src="" alt="" /></a>
+        <a
+          href="/dashboard"
+          class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900"
+          >Home</a
+        >
+        <a
+          href="/team"
+          class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900"
+          >Team</a
+        >
+        <a
+          href="/projects"
+          class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900"
+          >Projects</a
+        >
+        <a
+          href="/reports"
+          class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900"
+          >Reports</a
+        >
+      </nav>
+    </header>
+
+    <main class="">
+      <container class="flex items-center justify-between w-4/5 mx-auto">
+        <div class="my-32">
+          <h1 class="text-5xl font-bold text-myFont">
+            Wake up to perfectly <br />
+            edited product photos
+          </h1>
+          <p class="my-8 text-2xl text-myFont">
+            From a simple white background to the most complex clipping paths.
+            Get pixel perfect image editing services, whenever you need them.
+          </p>
+
+          <button class="bg-mybgColor py-4 px-8 text-lg text-white rounded-lg">
+            Get Started
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 inline"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="bg-contain bg-center">
+          <img src="images/cover-photo-editing.webp" alt="" />
+        </div>
+      </container>
+    </main>
+  </body>
 </html>
